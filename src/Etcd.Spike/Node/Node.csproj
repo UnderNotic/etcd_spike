@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Etcd.Client\Etcd.Client.csproj">
+      <Project>{E2DFDFB8-6E70-4217-A32B-E752CA0CBB2B}</Project>
+      <Name>Etcd.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
