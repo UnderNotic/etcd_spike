@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{6469C801-69B2-4A78-8EC3-664360C8895D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Node", "Node\Node.csproj", "{70B11271-B812-4058-9C7C-7244F97075BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etcd.Client", "Etcd.Client\Etcd.Client.csproj", "{E2DFDFB8-6E70-4217-A32B-E752CA0CBB2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB35AD9B-2A2F-4DBA-9E00-1724074B4926}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\etcd\my_script_1.ps1 = ..\..\etcd\my_script_1.ps1
+		..\..\etcd\my_script_2.ps1 = ..\..\etcd\my_script_2.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
