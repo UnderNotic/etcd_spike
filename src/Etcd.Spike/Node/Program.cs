@@ -12,11 +12,14 @@ namespace Node
     {
         static void Main(string[] args)
         {
-            var url = $"http://+:{GetAvailablePort(8080)}";
-            var heartBeat = new HeartBeat(url);
+            var port = GetAvailablePort(8080);
+            var url = $"http://+:{port}";
+            var fullUrl = $"http://{Dns.GetHostName()}:{port}";
+            var heartBeat = new HeartBeat(fullUrl);
+
             using (WebApp.Start<Startup>(url))
             {
-                Console.WriteLine($"Running {ConfigurationManager.AppSettings["NodeType"]} on {url}");
+                Console.WriteLine($"Running {ConfigurationManager.AppSettings["NodeType"]} on {fullUrl}");
                 Console.WriteLine("Press enter to exit");
                 Console.ReadLine();
             }

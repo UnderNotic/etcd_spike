@@ -18,7 +18,7 @@ public class ApiModule : NancyModule
 
     private HttpStatusCode HandleRequest()
     {
-        Console.WriteLine($"Request to {this.Request.Url} - {this.Request.UserHostAddress}");
+        Console.WriteLine($"Received request {this.Request.Url}");
         return HttpStatusCode.OK;
     }
 }
