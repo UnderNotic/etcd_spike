@@ -62,12 +62,9 @@
     <Compile Include="generated\Kv.cs" />
     <Compile Include="generated\Rpc.cs" />
     <Compile Include="generated\RpcGrpc.cs" />
-    <Compile Include="LeaseTTLRefresher.cs" />
-    <Compile Include="LeaseWatcher.cs" />
+    <Compile Include="EtcdLeaseTTLRefresher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GrpcWatcher.cs" />
-    <Compile Include="SubscribeWatcher.cs" />
-    <Compile Include="WatcherBase.cs" />
+    <Compile Include="EtcdWatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Owin.Hosting;
+using System;
 
 namespace Gateway
 {
@@ -10,6 +7,18 @@ namespace Gateway
     {
         static void Main(string[] args)
         {
+            Run();
+        }
+
+        static async void Run()
+        {
+            var url = $"http://+:3000";
+            using (WebApp.Start<Startup>(url))
+            {
+                Console.WriteLine("Running on {0}", url);
+                Console.WriteLine("Press enter to exit");
+                Console.ReadLine();
+            }
         }
     }
 }
